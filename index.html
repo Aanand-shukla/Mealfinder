@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <title>Recipe App</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--! popup start here  -->
+      <div id="popup1" class="overlay overlays">
+        <i class="fa-solid fa-xmark"></i>
+        <h3>Please Enter Your Favourite Food Name</h3>
+      </div>
+      <!--! popup end here -->
+      <div class="mealsP">
+        <h1>Recipe App</h1>
+
+        <div class="container_wrapper">
+          <form id="submit">
+            <input type="text" id="search" placeholder="Search Your Meal" />
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+          <div id="random">
+            <i class="fa-solid fa-shuffle"></i>
+          </div>
+        </div>
+        <div class="result_heading" id="result_heading"></div>
+        <div id="meal" class="meal"></div>
+      </div>
+    </div>
+  </body>
+</html>
